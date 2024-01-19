@@ -1,8 +1,10 @@
-# Search-based Offline Imitation Learning (SEABO)
+# SEABO: A Simple Search-Based Method for Offline Imitation Learning (ICLR 2024)
 
-Under review, please do not distribute.
+SEABO is a simple yet effective method for assigning rewards to unlabeled offline datasets. Our key idea is that if a transition lie close to the expert trajectory, it ought to have a larger reward and vice versa. The illustration of our method can be found below.
 
 ## How to run
+
+For reproducing our reported results in the paper, please check the following instructions.
 
 For IQL+SEABO, on MuJoCo tasks, run
 ```
@@ -38,4 +40,16 @@ python main.py \
        # what to query, contain actions or not
        --no_action_dim \
        # whether to include action dimension in the reward calculation
+```
+
+## Citation
+
+If you use our method or code in your research, please consider citing the paper as follows:
+```
+@inproceedings{lyu2024seaboasimple,
+ title={SEABO: A Simple Search-Based Method for Offline Imitation Learning},
+ author={Jiafei Lyu and Xiaoteng Ma and Le Wan and Runze Liu and Xiu Li and and Zongqing Lu},
+ booktitle={International Conference on Learning Representations},
+ year={2024}
+}
 ```
