@@ -2,6 +2,8 @@
 
 SEABO is a simple yet effective method for assigning rewards to unlabeled offline datasets. Our key idea is that if a transition lie close to the expert trajectory, it ought to have a larger reward and vice versa. The illustration of our method can be found below.
 
+![SEABO pipeline](seabo.png)
+
 ## How to run
 
 For reproducing our reported results in the paper, please check the following instructions.
